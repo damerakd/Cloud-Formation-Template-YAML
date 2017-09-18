@@ -158,13 +158,22 @@ Parameters:
   DatabaseName:
     Type: String
     Default: xxxxxx
+    MinLength: 5
+    MaxLength: 64
+    AllowedPattern: "[a-zA-Z][a-zA-Z0-9]*"
   DatabaseUser:
     Type: String
-    Default: xxxxx
+    Default: kdamera1
+    MinLength: 7
+    MaxLength: 64
+    AllowedPattern: "[a-zA-Z][a-zA-Z0-9]*"
   DatabasePassword:
     Type: String
     Default: xxxxxx
     NoEcho: true
+    MinLength: 8
+    MaxLength: 30
+    AllowedPattern: "[a-zA-Z0-9]*"
   SampleString: 
     Type: String
     Default: This is Kumara
